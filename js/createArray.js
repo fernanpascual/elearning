@@ -4,7 +4,7 @@ for (var i = 1; i <= totalChapters; i++) {
 	soundContentHolder.push([]);
 	currentChapterPage.push(1);// all chapters into page 1 default
 	navigationCurrentPage.push(pagesPerChapter[i-1]+1);
-	console.log(firstPage)
+	//console.log(firstPage)
 	for (var e = 1; e <= pagesPerChapter[i-1]; e++) { 
 		if(firstPage){
 			e--;

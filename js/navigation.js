@@ -1,7 +1,7 @@
 
 
 function nextPage() {
-	if(currentChapter == totalChapters && currentChapterPage[currentChapter-1] == pagesPerChapter[currentChapter-1]+1){console.log("end of slide");return};
+	if(currentChapter == totalChapters && currentChapterPage[currentChapter-1] == pagesPerChapter[currentChapter-1]+1){return};
 	for (var e = 0; e < totalChapters; e++) { 
 		if(currentChapterPage[e] == pagesPerChapter[e]+1 && currentChapter == e+1 && currentChapter != 1){
 			currentChapter = currentChapter + 1;
@@ -197,14 +197,14 @@ function checkProgress(clicked){
 			if(pageOfQuiz[currentChapter-2] == pagesPerChapter[currentChapter-2]){
 				quizNum = 0;
 			} 
-			console.log((pageOfQuiz[currentChapter-2]+quizNum) + "/" + pagesPerChapter[currentChapter-2])
+			//console.log((pageOfQuiz[currentChapter-2]+quizNum) + "/" + pagesPerChapter[currentChapter-2])
 			if(progressPage.innerHTML == ((pageOfQuiz[currentChapter-2]+quizNum) + "/" + pagesPerChapter[currentChapter-2]) && (pageOfQuiz[currentChapter-2] !=0)){
 				callingMrLee()
 			}else{
 				if(progressPage.innerHTML == ((pageOfQuiz[currentChapter-1]) + "/" + pagesPerChapter[currentChapter-1]) && (pageOfQuiz[currentChapter-1] !=0)){
 					callingMrLee();
 				}else{
-					console.log(pageOfQuiz[currentChapter-1] +" vs "+ (currentChapterPage[currentChapter-1]-1))
+					//console.log(pageOfQuiz[currentChapter-1] +" vs "+ (currentChapterPage[currentChapter-1]-1))
 					if(currentChapter == totalChapters && pageOfQuiz[currentChapter-1] != (currentChapterPage[currentChapter-1])){return}
 					exitMrLee();
 				}
@@ -214,7 +214,7 @@ function checkProgress(clicked){
 			if(progressPage.innerHTML == ((pageOfQuiz[currentChapter-1] + "/" + pagesPerChapter[currentChapter-1])) && (pageOfQuiz[currentChapter-1] !=0)){
 				callingMrLee()
 			}else{
-				console.log((pageOfQuiz[currentChapter-1]+1) + "/" + pagesPerChapter[currentChapter-1])
+				//console.log((pageOfQuiz[currentChapter-1]+1) + "/" + pagesPerChapter[currentChapter-1])
 				if(progressPage.innerHTML == ((pageOfQuiz[currentChapter-1]+1) + "/" + pagesPerChapter[currentChapter-1]) && (pageOfQuiz[currentChapter-1] !=0)){
 					callingMrLee();
 					if(currentChapter == 1){
@@ -223,9 +223,9 @@ function checkProgress(clicked){
 					}
 				}else{
 					var i = 1;
-					console.log("how many quiz "+((pagesPerChapter[currentChapter-1] - pageOfQuiz[currentChapter-1]+1)));
-					console.log((pageOfQuiz[currentChapter-1]+i) + "/" + pagesPerChapter[currentChapter-1]);
-					console.log(progressPage.innerHTML)
+					//console.log("how many quiz "+((pagesPerChapter[currentChapter-1] - pageOfQuiz[currentChapter-1]+1)));
+					//console.log((pageOfQuiz[currentChapter-1]+i) + "/" + pagesPerChapter[currentChapter-1]);
+					//console.log(progressPage.innerHTML)
 					i = (((pagesPerChapter[currentChapter-1] - pageOfQuiz[currentChapter-1]+1)) > 2) ? 2 : 1;
 					if(progressPage.innerHTML == (1 + "/" + pagesPerChapter[currentChapter-1])){
 						exitMrLee();
@@ -240,12 +240,12 @@ function playSound(){
 	muted = true;
 	isPlaying = false;
 	togglePlayPause();
-	console.log("play audio");
+	//console.log("play audio");
 }
 
 function closeWindow(){
 	window.close();
-	console.log("close window")
+	//console.log("close window")
 }
 
 closeX.addEventListener("click",closeWindow);

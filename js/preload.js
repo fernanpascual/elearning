@@ -85,7 +85,7 @@
 	Preload.prototype.onProgress = function(event){
 		// console.log(Math.round(event.loaded * 100));
 		currentProgress = event.loaded * 1.5;
-		console.log(Math.round(currentProgress * 100));
+		//console.log(Math.round(currentProgress * 100));
 		var anim = "";
 			anim += "-webkit-transition: width 500ms ease-in-out;";
 			anim += "-moz-transition: width 500ms ease-in-out;";

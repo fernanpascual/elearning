@@ -53,7 +53,7 @@ function loadScript(url, callback)
 }
 
 var jsLoaded = function() {
-	console.log("JS LOADED");
+	//console.log("JS LOADED");
 };
 
 loadScript("js/createArray.js", jsLoaded);

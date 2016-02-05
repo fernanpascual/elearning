@@ -20,7 +20,7 @@ function loadScript(url, callback)
 }
 
 var jsLoaded = function() {
-  console.log("JS LOADED");
+  //console.log("JS LOADED");
 };
 loadScript("http://code.jquery.com/jquery-2.1.4.min.js", jsLoaded);
 loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js", jsLoaded);
@@ -41,14 +41,14 @@ document.querySelector('.choices').addEventListener('click', choicesHandler);
 
 function correctHandler(){
   document.querySelector('.message').className = (document.querySelector('.question.correct')) ? 'message show correct' : 'message show';
-  (document.querySelector('.question.correct')) ? window.top.postMessage('correct', '*') : console.log("wrong answer");
+  if(document.querySelector('.question.correct')){ window.top.postMessage('correct', '*') };
 };
 
 function choicesHandler(e){
   document.querySelector('.message').className = 'message';
-  console.log(this);
+  //console.log(this);
   for (var i = 1; i <= Object.keys(quiz["choices"]).length; i++) {
-    console.log(this)
+    //console.log(this)
     try{document.querySelector(".choices > div:nth-child("+i+")").classList.remove('selected')}catch(e){};
   }
   if($(e.target).hasClass('answer')){
@@ -63,7 +63,7 @@ function choicesHandler(e){
     TweenLite.fromTo($('.message'), 1, { opacity: 0, scale:.3}, { opacity: 1, scale:1, ease: Bounce.easeOut, y: 0, onComplete:correctHandler});
   }else{
     var a = e.target.getAttribute('name');
-    console.log('#X'+a)
+    //console.log('#X'+a)
     document.querySelector('#X'+a).className += " selected";
     document.querySelector('.message').innerHTML = "Wrong. Try Again!"
     document.querySelector('.message').className = 'message wrong';

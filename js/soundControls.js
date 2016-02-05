@@ -37,7 +37,7 @@ function togglePlayPause(){
 }
 
 function soundComplete(){
-	console.log("soundComplete")
+	//console.log("soundComplete")
 	if(!isQuiz)disableControls();
 }
 
