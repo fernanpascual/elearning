@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>quiz</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link href='css/quiz.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="container">
+		<h1>Quiz</h1>
+		<h2 class="question"></h2>
+		<div class="choices">
+		</div>
+		<div class="message hide" id="message">Message</div>
+	</div>
+</body>
+<script>
+	var quiz = {
+		"question": "Tom has been preparing for the last two days to meet a high profile customer. What are some important aspects that he should have in mind during his meeting?",
+		"choices": {
+			"1": "Appearance",
+			"2": "Gestures and face expressions",
+			"3": "Eye contact",
+			"4": "All of the above"
+		},
+		"answer":"4"
+	};
+</script>
+<script type="text/javascript" src="js/quiz.js"></script>
+</html>

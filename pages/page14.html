@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>quiz</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link href='css/quiz.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="container">
+		<h1>Quiz</h1>
+		<h2 class="question"></h2>
+		<div class="choices">
+		</div>
+		<div class="message hide" id="message">Message</div>
+	</div>
+</body>
+<script>
+	var quiz = {
+		"question": "Neil has a meeting with Paul, who owns an electrical engineering firm. Neil makes his best effort to explain the product to the Paul, however, Paul declines to buy the product.<br><br>Neil thinks as to why he has missed the sale and identifies the reason. What do you think could be the possible reason missed during product demonstration?",
+		"choices": {
+			"1": "Benefits and Disadvantages",
+			"2": "Features ,Advantages and Benefits",
+			"3": "Characteristics , effects and causes",
+			"4": "None of the above"
+		},
+		"answer":"2"
+	};
+</script>
+<script type="text/javascript" src="js/quiz.js"></script>
+</html>

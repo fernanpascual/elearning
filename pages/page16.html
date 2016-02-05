@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/revised.css">
+	<style type="text/css">
+		svg {
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+
+		.content {
+			height: 305px;
+		}
+
+		.btn {
+			position: absolute;
+			top: 100px;
+			text-align: center;
+			width: 100px;
+			line-height: 2.5em;
+			font-size: 13px;
+			border-top-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+			background-color: #0091EA;
+			color: #fff;
+		}
+
+		.buyer {
+			left: 275px;
+		}
+
+		.buyer:after {
+			content: "Customer";
+			position: absolute;
+			left: 0;
+			top: 75px;
+			color: #000;
+			font-size: 16px;
+		}
+
+		.seller {
+			right: 275px;
+		}
+
+		.seller:after {
+			content: "Sales person";
+			position: absolute;
+			left: 20px;
+			top: 75px;
+			color: #000;
+			font-size: 16px;
+			line-height: 1em;
+			text-align: left;
+		}
+
+		.txt {
+			position: absolute;
+			font-size: 13px;
+			width: 100px;
+			height: 38px;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+
+		<header>
+			<div class="headline-container">
+				<h2>Who is a Buyer and Seller </h2>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<div class="content">
+					<svg height="305" width="505" version = "1.1">
+					  <circle id="circ" cx="152" cy="152" r="150" stroke="black" stroke-width="1" fill="transparent" />
+					  <use x="200" y="0" xlink:href = "#circ"/>
+					</svg>
+					<div class="btn buyer">BUYER</div>
+					<div class="btn seller">SELLER</div>
+					<div class="txt">Product<br>Selling</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>quiz</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link href='css/quiz.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="container">
+		<h1>Quiz</h1>
+		<h2 class="question"></h2>
+		<div class="choices">
+		</div>
+		<div class="message hide" id="message">Message</div>
+	</div>
+</body>
+<script>
+	var quiz = {
+		"question": "Paul visits the customer for the second time for the product sale. The customer is holding a manufacturing firm and likes to know more about the product. Paul should focus his discussion around?",
+		"choices": {
+			"1": "Explaining about current trends of Manufacturing Industry",
+			"2": "Talking about the product for sale",
+			"3": "Helping customer on the product benefits and advantages for his line of manufacturing business",
+			"4": "None of the above"
+		},
+		"answer":"3"
+	};
+</script>
+<script type="text/javascript" src="js/quiz.js"></script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>quiz</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link href='css/quiz.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="container">
+		<h1>Quiz</h1>
+		<h2 class="question"></h2>
+		<div class="choices">
+		</div>
+		<div class="message hide" id="message">Message</div>
+	</div>
+</body>
+<script>
+	var quiz = {
+		"question": "Rensuer is an academic organization which has publishing thousands of books and manuals every year.<br>The organization is very successful. What is the success factor in the Rensuer selling concept?",
+		"choices": {
+			"1": "Focus, Knowledge, Evaluation and Decision",
+			"2": "Recognition, Information, Evaluation and Product",
+			"3": "Brand, Product , Information and Evaluation",
+			"4": "Knowledge, Decision, Brand and Focus"
+		},
+		"answer":"1"
+	};
+</script>
+<script type="text/javascript" src="js/quiz.js"></script>
+</html>
